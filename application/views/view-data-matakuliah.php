@@ -9,7 +9,7 @@
 				 Tampil Data Mata Kuliah
 				</th>
 			</tr>
-			
+
 			<tr>
 				<td colspan="3">
 				 <hr>
@@ -20,9 +20,7 @@
 			 <th>Kode MTK</th>
 				<th>:</th>
 				<td>
-				 <?= $kode; ?>
-				 	
-				 </td>
+				 <?= $kode; ?></td>
 			</tr>
 
 			<tr>
@@ -42,7 +40,7 @@
 					</td>
 			</tr>
 
-			<tr> <td colspan="3"> <a href="<?= base_url('Matakuliah'); ?>">Kembali</a> </td>
+			<tr> <td colspan="3"> <a href="<?= base_url('matakuliah'); ?>">Kembali</a> </td>
 			</tr>
 		</table>
 </body>
