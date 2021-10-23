@@ -1,24 +1,28 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Membuat Form Validation</title>
+   </head>
+   <body>
+      <form action="<?=base_url('form/aksi');?>" method="post">
+         <h1>Membuat Form Validation CODEIGNITER</h1>
+         <h1>Membuat Form Validation</h1>
 
-<head>
-    <title>Membuat Form Validation</title>
-</head>
-
-<body>
-    <form action="<?= base_url('form/aksi'); ?>" method="post">
-        <h1>Membuat Form Validation dengan CodeIgniter | MalasNgoding.com</h1>
-        <?php echo validation_errors(); ?>
-        <?php echo form_open('form/aksi'); ?>
-        <label for="">Nama</label><br/>
-        <input type="text" name="nama"><br/>
-        <?php echo form_error('nama'); ?>
-        <label for="">Email</label><br/>
-        <input type="text" name="email"><br/>
-        <?php echo form_error('email'); ?><br/>
-        <label for="">Konfirmasi Email</label><br/>
-        <input type="text" name="konfir_email"><br/>
-        <?php echo form_error('konfir_email'); ?>
-        <input type="submit" value="Simpan">
-    </form>
-</body>
+         <!--form nama-->
+         <label for="">Nama</label><br>
+         <input type="text" name="nama" value=""><br>
+         <strong><?php echo form_error("nama"); ?></strong>
+         <!--form email-->
+         <label for="">Email</label><br>
+         <input type="text" name="email" value=""><br>
+         <strong><?php echo form_error("email"); ?></strong>
+         <!--form konfirmasi email-->
+         <label for="">Konfirmasi Email</label><br>
+         <input type="text" name="konfir_email" value=""><br>
+         <strong><?php echo form_error("konfir_email"); ?></strong>
+         <!--form submit-->
+         <input type="submit" value="Simpan"><br>
+      </form>
+   </body>
 </html>
